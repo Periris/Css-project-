@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Project</title>
+    <link rel="stylesheet" href="num.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <button type="button" class="again">Again!</button>
+        <p class="between">(Between 1 and 20)</p>
+      </div>
+      <h1 class="guess_num">Guess My Number!</h1>
+      <div class="num_line">
+        <div class="leftline"></div>
+        <div class="number">?</div>
+        <div class="rightline"></div>
+      </div>
+
+      <main class="the_main">
+        <div class="flex-container">
+          <div class="left-flex">
+            <input type="number" max="20" min="0" class="guess" /><br /><br />
+            <button class="btn check">Check!</button>
+          </div>
+          <div class="right-flex">
+            <p class="message">Start guessing...</p>
+            <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <p class="label-highscore">
+              🥇 Highscore: <span class="highscore">0</span>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <button type="exit" class="exit" onclick="exitWindow()">Exit</button>
+    <script src="num.js"></script>
+  </body>
+</html>
